@@ -1,0 +1,2386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#"
+     xml:base="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cloud="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasAbbreviation"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasThickness -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasThickness"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isFeatureOf">
+        <owl:inverseOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Altocumulus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Altocumulus">
+        <rdfs:label>Alto cumulus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:description>Clouds of the genus altocumulus are not always
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+associated with a weather front but can still bring precipitation,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+usually in the form of virga which does not reach the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ground. This genus is generally an indicator of limited convective
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+instability at the altitude of its formation from 6,500 to about
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23,000 ft (2 to 7 km) in temperate latitudes, and is therefore more
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+closely related to stratocumulus than to the more freely convectice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cumulus genus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dc:description>
+        <hasAbbreviation>Ac</hasAbbreviation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Altostratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Altostratus">
+        <rdfs:label>Alto stratus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>As</hasAbbreviation>
+        <dc:description>Clouds of the genus altostratus form when a large
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+convectively stable airmass is lifted to condensation in the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mid-altitude level of the troposphere, usually along a frontal system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Altostratus can bring light rain or snow. If the precipitation becomes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+continuous, it may thicken into nimbostratus which can bring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+precipitation of moderate to heavy intensity.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Arcus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Arcus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+ arch or a bow. mostly attached to
+
+
+
+    cumulus, thick with ragged edges.
+
+
+
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Calvus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Calvus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Capillatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Capillatus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Castellanus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Castellanus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>castle-like with a series of turret    shapes  - indicates air mass instability 
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirriform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirriform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrocumulus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrocumulus">
+        <rdfs:label>Cirrocumulus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:description>Clouds of the genus cirrocumulus form when moist air at high tropospheric altitude reaches saturation, creating ice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+crystals. Limited convective instability at the cloud level gives the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cloud a rolled or rippled appearance. Despite the lack of a /strato-/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prefix, cirrocumulus is physically more closely related to stratocumulus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+than the more freely convective cumulus genus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dc:description>
+        <hasAbbreviation>Cc</hasAbbreviation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrocumulusStratiformis -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrocumulusStratiformis">
+        <rdfs:label>Cirrocumulus stratiformis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrocumulus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiformis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrostratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrostratus">
+        <rdfs:label>Cirrostratus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>Cs</hasAbbreviation>
+        <dc:description>Clouds of the genus cirrostratus consist of mostly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+continuous, wide sheets of cloud that covers a large area of the sky. It
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+is formed when convectively stable moist air cools to saturation at high
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+altitude, forming ice crystals. cirrostratus is a precursor to rain or snow if it thickens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+into mid-level altostratus and eventually nimbostratus as the weather
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+front moves closer to the observer.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus">
+        <rdfs:label>Cirrus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirriform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>Ci</hasAbbreviation>
+        <dc:description>approaching  storm system eventually followed by fair weather.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusCastellanus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusCastellanus">
+        <rdfs:label>Cirrus castellanus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Castellanus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>    A series of dense lumps, or `towers&#39;, connected by a thinner base.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusDuplicatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusDuplicatus">
+        <rdfs:label>Cirrus duplicatus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Duplicatus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>            Sheets at different layers of the upper troposphere, which may be connected at one or more points.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusFibratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusFibratus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Fibratus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>    High clouds having the traditional `mare&#39;s tail&#39; appearance. These
+
+
+
+
+
+    clouds are long, fibrous, and curved, with no tufts or curls at the
+
+
+
+
+
+    ends.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusFloccus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusFloccus">
+        <rdfs:label>Cirrus floccus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Floccus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>    Elements which take on a rounded appearance on the top, with the
+
+
+
+
+
+    lower part appearing ragged.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusIntortus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusIntortus">
+        <rdfs:label>Cirrus intortus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Intortus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>            Irregularly curved or tangled filaments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusRadiatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusRadiatus">
+        <rdfs:label>Cirrus radiatus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Radiatus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>            Large horizontal bands that appear to converge at the horizon </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusSpissatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusSpissatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Spissatus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusUncinus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusUncinus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Uncinus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>    Filaments with up-turned hooks or curls.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusVertebratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CirrusVertebratus">
+        <rdfs:label>Cirrus vertebratus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirrus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Vertebratus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Class:             Elements arranged in the manner of a vertebrae</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Congestus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Congestus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>great verticsal development and heaped into cauliflower shapes - indicates considerable air mass
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumulonimbus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumulonimbus">
+        <rdfs:label>Cumulonimbus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>Cn</hasAbbreviation>
+        <dc:description>Clouds of the genus cumulonimbus have very dark gray to nearly black flat bases and very high tops that can penetrate the tropopause.
+They develop from cumulus when the 
+airmass is convectively highly unstable. They generally produce 
+thunderstorms, rain  or showers, and sometimes hail,
+strong outflow winds, and/tor   ornadoes at ground level.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumulus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumulus">
+        <rdfs:label>Cumulus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:description>Moderate vertical cumulus is the product of free convective airmass instability. Continued upward growth suggests showers later in the day.</dc:description>
+        <hasAbbreviation>Cu</hasAbbreviation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CumulusMediocris -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CumulusMediocris">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasFeature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Mediocris"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel"/>
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumuloform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Duplicatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Duplicatus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+partly merged layers of cloud
+
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Fibratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Fibratus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+thin filament type clouds, can be straight or slightly
+
+    curved
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Floccus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Floccus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+looking like a tuft of wool  - indicates mid to high level instability
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Fractus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Fractus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+irregular shredded appearance -forms in preciptation or gusty wind
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#HighLevel">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Humilis -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Humilis">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment> small, low, flattened cumulus  - indicates slight air mass instability.
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Incus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Incus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>anvil shaped
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Intortus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Intortus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>twisted
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Lacunosus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Lacunosus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>having a lens-like
+
+
+    appearance 
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Lenticularis -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Lenticularis">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>full of holes 
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Level -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Level"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Mamma -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Mamma">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>round
+
+
+    pouches on under-surface of cloud - &#39;breast cloud&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Mediocris -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Mediocris">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>medium size cumulus with bulges at the top  - indicates moderate instability and up-currents
+
+medium size cumulus with bulges at the top 
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ModerateThickness -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ModerateThickness">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thickness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Nebulosus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Nebulosus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+
+indistinct cloud without features  - indicates light winds, if any, and stable air mass.
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Nimbostratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Nimbostratus">
+        <rdfs:label>Nimbostratus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel"/>
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#MediumLevel"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiform"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>Ns</hasAbbreviation>
+        <dc:description>Clouds of the genus nimbostratus tend to bring constant precipitation and low visibility. This cloud type normally forms above 6,500 feet (2.0 km) from altostratus cloud but tends to thicken into the lower levels during the occurrence of precipitation. The top of a nimbostratus deck is usually in the middle level of the troposphere.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Opacus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Opacus">
+        <rdfs:label>Opaqus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Transparency"/>
+        <rdfs:comment>thick and shadowy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Pannus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Pannus">
+        <rdfs:label>Pannus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>Shredded</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Perlucidus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Perlucidus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Transparency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Pileus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Pileus">
+        <rdfs:label>Pileus </rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isFeatureOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cumulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>hood-shaped cumulus -&#39;capped&#39;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Praecipitatio -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Praecipitatio">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainfallFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Radiatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Radiatus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+       clouds in parallel lines converging at a
+
+    central point - perhaps is a pattern...  
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainfallFeature -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainfallFeature">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#SpeciesFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#SpeciesFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#SpeciesFeature -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#SpeciesFeature"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Spissatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Spissatus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+
+thick cirrus with a grey appearance  - indicates  upward movement of air in the upper troposphere
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiformis -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiformis">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>horizontal cloud sheet of flattened cumuliform cloud - idicates slight air mass instability.
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratocumuliform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratocumuliform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratus">
+        <rdfs:label>Stratus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratiform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <hasAbbreviation>St</hasAbbreviation>
+        <dc:description>Clouds of the genus stratus form in low horizontal
+
+
+
+layers having a ragged or uniform base. Ragged stratus often forms in
+
+
+
+precipitation while more uniform stratus forms in maritime or other
+
+
+
+moist stable air mass conditions. The latter often produces drizzle.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ThickStratiform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ThickStratiform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thickness -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thickness"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thin -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thin">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Thickness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Towering -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Towering"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Translucidus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Translucidus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Transparency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Transparency -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Transparency">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#SpeciesFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Tuba -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Tuba">
+        <rdfs:label>Tuba</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>shaped like a tuba </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Uncinus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Uncinus">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isFeatureOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Cirriform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>
+
+
+
+
+
+
+
+
+
+
+
+cirrus with a hook shape at the top 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Undulatus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Undulatus">
+        <rdfs:label>Undulatus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+
+
+
+wavy
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Velum -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Velum">
+        <rdfs:label>Velum </rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>Sail like</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Vertebratus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Vertebratus">
+        <rdfs:label>Vertebratus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#ShapeRefinement"/>
+        <rdfs:comment>
+
+
+skeletal
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Vertical -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Vertical"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Virga -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Virga">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainfallFeature"/>
+        <rdfs:comment>
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_cloud_types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#cumulonimbiform -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#cumulonimbiform">
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#BasicShape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#isCapableOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#RainProduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#stratocumulus -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#stratocumulus">
+        <rdfs:label>Stratocumulus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#CloudGenus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#LowLevel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#hasShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/cloud.owl#Stratocumuliform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:description>Clouds of the genus stratocumulus are lumpy, often
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+forming in slightly unstable air from near surface to ca. 6,500 feet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(2.0 km), and they can produce very light rain or drizzle.</dc:description>
+        <hasAbbreviation>Sc</hasAbbreviation>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
